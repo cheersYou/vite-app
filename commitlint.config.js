@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 01:51:59
+ * @LastEditTime: 2021-12-12 02:00:23
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
@@ -16,7 +16,9 @@ module.exports = {
     'scope-enum': [2, 'never'],
   },
   prompt: {
-    settings: {},
+    settings: {
+      enableMultipleScopes: true, // scope 多个切换
+    },
     messages: {
       skip: ':skip',
       max: 'upper %d chars',
@@ -89,7 +91,12 @@ module.exports = {
           },
         },
       },
-      scope: ['public'],
+      scope: {
+        enum: {
+          public: { description: 'A new feature', title: 'Features', emoji: '✨' },
+        },
+        description: 'What is the scope of this change (e.g. component or file name)',
+      },
       subject: {
         description: 'Write a short, imperative tense description of the change',
       },
