@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 01:36:33
+ * @LastEditTime: 2021-12-12 01:51:59
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
   // value
   rules: {
     'type-empty': [2, 'never'],
-    'scope-enum': [0],
+    'scope-enum': [2, 'never'],
   },
   prompt: {
     settings: {},
@@ -89,10 +89,7 @@ module.exports = {
           },
         },
       },
-      scope: {
-        enum: ['公共', '测试'],
-        description: 'What is the scope of this change (e.g. component or file name)',
-      },
+      scope: ['public'],
       subject: {
         description: 'Write a short, imperative tense description of the change',
       },
