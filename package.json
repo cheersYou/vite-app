@@ -7,7 +7,8 @@
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "format": "prettier .  --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "dependencies": {
     "vue": "^3.2.23"
@@ -15,7 +16,9 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
     "@vitejs/plugin-vue": "^1.10.2",
+    "commitizen": "^4.2.4",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -40,5 +43,10 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }

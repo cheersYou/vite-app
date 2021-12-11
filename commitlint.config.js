@@ -3,11 +3,14 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 01:07:06
+ * @LastEditTime: 2021-12-12 01:36:33
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
   extends: ['@commitlint/config-conventional'],
+  // 0: 禁止这个规则，1: 代表警告，2: 代表错误
+  // always | never , never 不能。always 必须
+  // value
   rules: {
     'type-empty': [2, 'never'],
     'scope-enum': [0],
@@ -87,6 +90,7 @@ module.exports = {
         },
       },
       scope: {
+        enum: ['公共', '测试'],
         description: 'What is the scope of this change (e.g. component or file name)',
       },
       subject: {
