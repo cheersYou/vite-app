@@ -3,16 +3,13 @@
  * @LastEditors: weicong
  * @Description: 
  * @Date: 2021-12-11 18:58:28
- * @LastEditTime: 2021-12-12 00:00:13
+ * @LastEditTime: 2021-12-12 00:10:18
  * @FilePath: \vite-project\src\App.vue
 -->
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import HelloWorld from './components/HelloWorld.vue';
-
-
-
 </script>
 
 <template>
