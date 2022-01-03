@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   margin: 0;
-  padding: 0;
 }
-
-// * {
-//   color: red;
-// }
+// 修复 tailwind 导致message样式错乱
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+}

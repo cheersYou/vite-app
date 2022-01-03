@@ -1,3 +1,11 @@
+/*
+ * @Author: weicong
+ * @LastEditors: weicong
+ * @Description:
+ * @Date: 2021-12-11 22:44:52
+ * @LastEditTime: 2021-12-30 15:37:11
+ * @FilePath: \vite-project\.prettierrc.js
+ */
 module.exports = {
   // 一行最多 100 字符
   printWidth: 100,

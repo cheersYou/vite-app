@@ -1,29 +1,26 @@
 <!--
  * @Author: weicong
  * @LastEditors: weicong
- * @Description: 
+ * @Description:
  * @Date: 2021-12-11 18:58:28
- * @LastEditTime: 2021-12-12 00:10:18
+ * @LastEditTime: 2022-01-01 16:35:14
  * @FilePath: \vite-project\src\App.vue
 -->
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue';
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <router-view v-if="isSelfRoute"></router-view>
+  <Layout v-else></Layout>
 </template>
 
+<script setup>
+import Layout from '@/Layout';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
+const store = useStore();
+const isSelfRoute = computed(() => store.getters['app/curRoute']);
+</script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
 }
 </style>

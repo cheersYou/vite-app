@@ -6,29 +6,44 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "format": "prettier .  --write",
     "prepare": "husky install",
     "commit": "git-cz"
   },
   "dependencies": {
-    "vue": "^3.2.23"
+    "ant-design-vue": "^3.0.0-alpha.14",
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "lodash": "^4.17.21",
+    "qiankun": "^2.6.3",
+    "vue": "^3.2.23",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
     "@vitejs/plugin-vue": "^1.10.2",
+    "@vitejs/plugin-vue-jsx": "^1.3.1",
+    "autoprefixer": "^10.4.0",
     "commitizen": "^4.2.4",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "less-vars-to-js": "^1.3.0",
     "lint-staged": "^12.1.2",
+    "postcss": "^8.4.4",
     "prettier": "^2.5.1",
-    "sass": "^1.45.0",
+    "sass": "^1.45.2",
+    "tailwindcss": "^3.0.1",
+    "unplugin-vue-components": "^0.17.8",
     "vite": "^2.7.0",
-    "vite-plugin-eslint": "^1.3.0"
+    "vite-plugin-eslint": "^1.3.0",
+    "vite-plugin-style-import": "^1.4.0",
+    "vite-plugin-svg-icons": "^1.0.5"
   },
   "lint-staged": {
     "src/**/*.{vue,js}": [

@@ -1,0 +1,33 @@
+{
+  "title":"我的博客系统",
+  "version":"1.0.0",
+  "development":{
+    "BASEURL":{
+      "port": 3001
+    },
+    "APPS":[
+      {
+        "title": "低代码平台",
+        "name": "lowcode-app",
+        "entry": "//localhost:3001",
+        "container": "#container",
+        "activeRule": "/main/lowcode"
+      },
+      {
+        "title": "可视化系统",
+        "name":"visual-app",
+        "entry":"//localhost:3002",
+        "container":"#container",
+        "activeRule":"/main/visual"
+      },
+      {
+        "title": "文章系统",
+        "name":"blog-app",
+        "entry":"//localhost:3003",
+        "container":"#container",
+        "activeRule":"/main/blog"
+      }
+    ]
+  },
+  "production":{}
+}

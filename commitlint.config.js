@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 03:16:03
+ * @LastEditTime: 2021-12-12 03:19:59
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
   },
   prompt: {
     settings: {
-      enableMultipleScopes: false, // scope 多个切换
+      enableMultipleScopes: true, // scope 多个切换
       scopeEnumSeparator: ',',
     },
     messages: {
@@ -109,13 +109,7 @@ module.exports = {
         },
       },
       scope: {
-        enum: {
-          feat: {
-            description: 'A new feature',
-            title: 'Features',
-            emoji: '✨',
-          },
-        },
+        description: 'cdddd',
       },
       subject: {
         description: 'Write a short, imperative tense description of the change',
