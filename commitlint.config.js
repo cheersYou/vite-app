@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 03:12:30
+ * @LastEditTime: 2021-12-12 03:16:03
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
@@ -34,6 +34,7 @@ module.exports = {
   prompt: {
     settings: {
       enableMultipleScopes: false, // scope 多个切换
+      scopeEnumSeparator: ',',
     },
     messages: {
       skip: ':skip',
