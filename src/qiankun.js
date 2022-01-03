@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2022-01-01 14:55:59
- * @LastEditTime: 2022-01-03 19:50:19
+ * @LastEditTime: 2022-01-03 20:04:32
  * @FilePath: \vite-project\src\qiankun.js
  */
 
