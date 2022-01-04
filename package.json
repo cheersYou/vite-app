@@ -1,6 +1,6 @@
 {
   "name": "vite-project",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,7 +20,6 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
     "@vitejs/plugin-vue": "^1.10.2",
