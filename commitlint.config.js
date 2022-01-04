@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-12 00:54:07
- * @LastEditTime: 2021-12-12 03:19:59
+ * @LastEditTime: 2022-01-05 00:21:07
  * @FilePath: \vite-project\commitlint.config.js
  */
 module.exports = {
@@ -109,7 +109,7 @@ module.exports = {
         },
       },
       scope: {
-        description: 'cdddd',
+        description: 'scope',
       },
       subject: {
         description: 'Write a short, imperative tense description of the change',
