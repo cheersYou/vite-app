@@ -3,12 +3,11 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2022-01-01 14:55:59
- * @LastEditTime: 2022-01-03 20:10:43
+ * @LastEditTime: 2022-01-05 01:45:57
  * @FilePath: \vite-project\src\qiankun.js
  */
 
 import { registerMicroApps, start, addGlobalUncaughtErrorHandler } from 'qiankun';
-
 export default (config) => {
   const apps = config.APPS || [];
   apps.map((app) => {

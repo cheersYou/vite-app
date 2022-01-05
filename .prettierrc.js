@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2021-12-11 22:44:52
- * @LastEditTime: 2021-12-30 15:37:11
+ * @LastEditTime: 2022-01-05 01:32:23
  * @FilePath: \vite-project\.prettierrc.js
  */
 module.exports = {
